@@ -1,3 +1,27 @@
 //====================================================================================================
-
+.page__main-block {
+	// background-color: yellow;
+}
+.main-block {
+	// background-color: blue;
+}
+.__block {
+}
+.main-block__container {
+	background-color: #000;
+	height: toRem(870);
+	border-radius: toRem(20);
+}
+.main-block__body {
+	// background-color: green;
+	max-width: toRem(690);
+	padding: 200px 0;
+	}
+	
+.main-text{
+	color: #fff;
+	@include adaptiveValue("font-size", 60, 30);
+  font-weight: 600;
+  line-height: 120%;
+}
 //====================================================================================================

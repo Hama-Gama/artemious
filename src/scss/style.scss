@@ -58,7 +58,7 @@ $responsiveType: 1;
 
 // Стили тега BODY ============================
 body {
-	background-color: #b3b1b1;
+	background-color: #fff;
 	font-weight: 300;
 	// Скролл заблокирован
 	.lock & {
@@ -72,7 +72,7 @@ body {
 }
 // Оболочка wrapper ================================================
 .wrapper {
-	background-color: rgb(183, 183, 237);
+	// background-color: rgb(183, 183, 237);
 	min-height: 100%;
 	display: flex;
 	flex-direction: column;
@@ -83,7 +83,7 @@ body {
 		// Прижимаем footer
 		> main {
 		padding: toRem(15);
-		background-color: rgb(100, 40, 227);
+		// background-color: rgb(100, 40, 227);
 		flex: 1 1 auto;
 	}
 	// Фикс для слайдеров
@@ -158,6 +158,6 @@ body {
 
 
 .__block{
-	background-color: rgb(241, 142, 55);
+	// background-color: rgb(241, 142, 55);
 	min-height: toRem(500);
 }
