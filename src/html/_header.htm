@@ -1,26 +1,28 @@
-<header class="header">
+<header data-scroll="120" data-scroll-show="1000" class="header">
 	<div class="header__wrapper">
 		<div class="header__container _container">
 			<div class="header__body">
 				<div class="header__main">
-					<a href="" class="header__logo">DalaCyst</a>
+					<div class="logo">
+						<a href="" class="header__logo">DalaCyst</a>
+					</div>
 					<div class="header__menu menu">
 						<nav class="menu__body">
 							<ul class="menu__list">
 								<li class="menu__item">
-									<a href="" class="menu__link">Our Products</a>
+									<a data-goto-header data-goto-top="130" data-goto=".products"  href="#" class="menu__link">Our Products</a>
 								</li>
 								<li class="menu__item">
-									<a href="" class="menu__link">About The Company</a>
+									<a data-goto-header data-goto-top="130" data-goto=".about"  href="#" class="menu__link">About The Company</a>
 								</li>
 								<li class="menu__item">
-									<a href="" class="menu__link">Contacts</a>
+									<a data-goto-header data-goto-top="130" data-goto=".contacts"  href="#" class="menu__link">Contacts</a>
 								</li>
 							</ul>
 						</nav>
 					</div>
 				</div>
-				<select name="form[]" data-class-modif="form">
+				<select  name="form[]" data-class-modif="form">
 					<option value="1" selected>English</option>
 					<option value="2">Русский</option>
 				</select>

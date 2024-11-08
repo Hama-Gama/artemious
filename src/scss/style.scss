@@ -33,7 +33,7 @@ $minWidth: 320;
 // Ширина полотна (макета)
 $maxWidth: 1440;
 // Ширина ограничивающего контейнера (0 = нет ограничения)
-$maxWidthContainer: 0;
+$maxWidthContainer: 1440;
 // Общий отступ у контейнера
 // (30 = по 15px слева и справа, 0 = нет отступа)
 $containerPadding: 0;
@@ -104,7 +104,8 @@ body {
 		@if ($maxWidthContainer>0) {
 			max-width: toRem($containerWidth);
 			margin: 0 auto;
-			background-color: pink;
+			// background-color: rgb(51, 187, 58);
+			padding: 0 toRem(15);
 		}
 		@if ($containerPadding>0) {
 			@if ($maxWidthContainer>0) {
