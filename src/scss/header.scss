@@ -1,10 +1,9 @@
-//====================================================================================================
+//==============================================================
 .header {
 	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
-	
 }
 .header__wrapper {
 	padding: 0 15px;
@@ -23,14 +22,13 @@
 	max-width: toRem(1440);
 	margin: 0 auto;
 	border-radius: toRem(10);
-	@include adaptiveValue("padding-right", 95, 0);
-	@include adaptiveValue("padding-left", 95, 0);
+	@include adaptiveValue("padding-right", 95, 5);
+	@include adaptiveValue("padding-left", 95, 5);
 	// background-color: yellow;
 }
 ._container {
 }
 .header__body {
-	// background-color: blue;
 	display: flex;
 	align-items: center;
 	padding: 5px 0;
@@ -49,34 +47,36 @@
 }
 .menu {
 	flex: 0 1 100%;
-	// background-color: red;
 	max-width: toRem(500);
 	margin: 0 auto;
 }
 
 .menu__body {
-	@media (max-width:$mobile){
-		 padding: toRem(50) toRem(15);
+	 	@media (max-width:$mobile){
+		 padding: toRem(100) toRem(15);
 		 position: fixed;
 		 width: 100%;
-		 height: 100%;
-		 top: toRem(170);
-		 right: 100%;
+		 height: 80%;
+		 top: -100%;
+		 left: 0;
 		 overflow: auto;
 		 background-color: #000;
 		 z-index: 4;
 		 transition: all 0.5s ease 0s; 
+		 text-align: center;
+		 border-radius: 0 0 10px 10px;
 		 &::before{
-			content: "";
-			position: fixed;
-			width: 100%;
-			height: toRem(50);
-			top: 0;
-			right: 100%;
-			z-index: 2;
-		 }
-		 .menu-open &{
-		 	  right: 0;
+				content: "";
+				position: fixed;
+				width: 100%;
+				height: toRem(50);
+				top: 100%;
+				right: 100%;
+				z-index: 2;
+			}
+			.menu-open &{
+		 	  top: 0;
+				left: 0;
 			&::before{
 				right: 0;
 			}
@@ -102,9 +102,9 @@
 	line-height: 150%;
 	letter-spacing: toRem(2);
 	transition: all 0.8s ease 0s;
-	&:hover{
-		// color: orangered;
-	}
+	// &:hover{
+	// 	color: orangered;
+	// }
 	@media (max-width:$mobile){
 		 font-weight: 700; 
 		 text-transform: uppercase;
