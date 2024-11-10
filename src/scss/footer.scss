@@ -1,3 +1,16 @@
 //====================================================================================================
+.footer__container{
+	background-color: gray;
+	min-height: 200px;
+}
+
+._icon-logo-footer::before{
+  width: toRem(105);
+	height: toRem(50);
+	color: #f95c5c;
+	font-size: toRem(44);
+	padding: toRem(5);
+	margin: toRem(5);
+}
 
 //====================================================================================================

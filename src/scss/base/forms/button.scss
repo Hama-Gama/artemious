@@ -3,7 +3,45 @@
 
 .button {
 	display: inline-flex;
-	padding: 0px 0px;
+	padding: 20px 50px;
+	background-image: linear-gradient(to right, #eb7979, #ff2c2c);
+	border-radius: toRem(18);
+	color: #fff;
+	font-weight: 700;
+	font-size: 30px;
+	justify-content: center;
+	@include adaptiveValue("font-size", 30, 24);
+	@media (max-width:$mobile){
+		 width: 100%;
+	}
+	@media (min-width:$mobile){
+		  @include adaptiveValue("padding-right", 150, 90);
+	    @include adaptiveValue("padding-left", 150, 90);
+	}
+	@media (any-hover: hover) {
+		&:hover {
+		}
+	}
+	&--fw {
+		width: 100%;
+	}
+}
+
+
+.button-black {
+	display: inline-flex;
+	padding: 12px 22px;
+	background-color: #f2f2f2;
+	color: #969696;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 18px;
+	justify-content: center;
+	@media (min-width:$mobileSmall){
+		  	max-width: 333px;
+				background-color: #1f1f1f;
+				color: #fff;
+	}
 	@media (any-hover: hover) {
 		&:hover {
 		}
