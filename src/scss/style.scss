@@ -58,7 +58,7 @@ $responsiveType: 1;
 
 // Стили тега BODY ============================
 body {
-	background-color: #fff;
+	background-color: #F2F2F2;
 	font-weight: 300;
 	// Скролл заблокирован
 	.lock & {
@@ -145,6 +145,7 @@ body {
 ._container-2{
 	max-width: toRem(1250);
 	margin: 0 auto;
+	margin-bottom: 100px;
 }
 
 // Подключение базовых стилей, шаблонов (заготовок) и вспомогательных  классов
@@ -160,6 +161,7 @@ body {
 
 // Подключение стилей отдельных страниц
 @import "home";
+
 
 
 .__block{

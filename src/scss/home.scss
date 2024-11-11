@@ -68,4 +68,52 @@
 	position: relative;
 	z-index: 30;
 }
+
+
 //====================================================================================================
+// NUMBERS ==========================
+.numbers__title {
+	@include adaptiveValue("margin-bottom", 25, 20);
+}
+.numbers__row{
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+}
+.numbers__column {
+	max-width: 400px;
+	@media (max-width:$mobile){
+		 flex: 0 0 100%; 
+	}
+	@media (min-width:$mobileSmall){
+		 min-width: 400px;
+	}
+}
+.numbers__row {
+	display: flex;
+	flex-wrap: wrap;
+}
+.numbers__body {
+	background-color: #fff;
+	padding: 55px 35px;
+	text-align: center;
+	border-radius: 20px;
+	height: 100%;
+	@media (max-width:$mobileSmall){
+		padding: 45px 35px;
+	}
+}
+.numbers__number {
+	font-family: $fontFamily;
+	font-size: 56px;
+	font-weight: 600;
+	color: #F95C5C;
+  line-height: 120%;
+}
+.numbers__text {
+	font-family: $fontFamily;
+	font-size: 20px;
+	font-weight: 500;
+	color: #000;
+	line-height: 120%;
+}

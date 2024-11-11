@@ -1,7 +1,123 @@
-//====================================================================================================
-.footer__container{
+//====================================================================
+
+// .footer__body {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	justify-content: space-between;
+// 	padding: 25px 5px;
+// 	@media (max-width:$mobile){
+// 		 flex-direction: column; 
+// 		 gap: 10px;
+// 	}
+// }
+// .footer__logo {
+// 	@media (max-width:$mobile){
+// 		  align-self: center;
+// 	}
+// }
+
+// .footer-nav__list {
+// 	display: flex;
+// 	flex-wrap: wrap;
+// 	align-items: center;
+// 	justify-content: space-between;
+// 	gap: 25px;
+// 	padding: 10px;
+	
+// 	max-width: 500px;
+// 	@media (max-width:$mobile){
+// 		  align-self: center;
+// 	}
+// 	@media (max-width:$mobileSmall){
+// 		 flex-direction: column;
+// 	}
+// }
+
+// .footer__social {
+// 	display: flex;
+// 	align-items: center;
+// 	gap: 25px;
+// 	padding: 10px;
+// 	@media (max-width:$mobile){
+// 		 align-self: center; 
+// 	}
+// 	@media (max-width:$mobileSmall){
+// 		 flex-direction: column; 
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+.footer {
+}
+.footer__container {
 	background-color: gray;
-	min-height: 200px;
+}
+
+.footer__body {
+	background-color: yellow;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 0;
+	@include adaptiveValue("padding-right", 40, 0);
+	@include adaptiveValue("padding-left", 40, 0);
+}
+.footer__row {
+	// background-color: brown;
+	// width: 100%;
+	@media (min-width:$mobile){
+		 display: flex; 
+	}
+}
+.footer__logo {
+}
+._icon-logo-footer {
+}
+.footer-nav__list {
+	background-color: greenyellow;
+	align-items: center;
+	min-height: 100px;
+	@media (min-width:$mobile){
+		 display: flex; 
+	}
+
+}
+.footer-nav__item {
+}
+.footer-nav__link {
+	color: #969696;
+	font-size: 18px;
+	font-weight: 500;
+	letter-spacing: 1px;
+}
+.footer__social {
+	background-color: teal;
+	padding: 15px;
+	@media (min-width:$mobile){
+		 display: flex; 
+		 align-items: center;
+	}
+}
+
+.footer__social-link {
+	color: #969696;
+	font-size: 24px;
+}
+._icon-linkedin {
+}
+._icon-facebook {
+}
+._icon-insta {
 }
 
 ._icon-logo-footer::before{
@@ -12,5 +128,4 @@
 	padding: toRem(5);
 	margin: toRem(5);
 }
-
-//====================================================================================================
+//=================================================
