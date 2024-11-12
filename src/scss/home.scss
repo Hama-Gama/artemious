@@ -117,3 +117,75 @@
 	color: #000;
 	line-height: 120%;
 }
+
+
+// THE UNIQ ========================================
+.page__uniq {
+}
+.uniq {
+}
+.uniq__container {
+	// background-color: #F95C5C;
+}
+.uniq__title {
+	@include adaptiveValue("margin-bottom", 30, 10);
+}
+.uniq__card {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	// padding: 0 -20px;
+}
+.card__body {
+	background-color: #fff;
+	border-radius: 20px;
+	@include adaptiveValue("padding", 30, 15);
+	@include adaptiveValue("padding-top", 30, 25);
+	// margin-bottom: 20px;
+	flex: 0 0 33%;
+	max-width: 370px;
+	margin: 0 20px 20px 0;
+    	@media (max-width:$tablet){
+		    flex: 0 0 50%;
+		  }
+			@media (max-width:$mobile){
+				 flex: 0 0 100%; 
+			}
+}
+
+.title-card{
+	font-family: $fontFamily;
+	font-weight: 600;
+	@include adaptiveValue("font-size", 30, 26);
+	color: #F95C5C;
+	line-height: 120%;
+	margin-bottom: 24px;
+	@include adaptiveValue("margin-bottom", 24, 10);
+}
+.card__text {
+	font-family: $fontFamily;
+	font-weight: 400;
+  font-size: 18px;
+  color: #000;
+  line-height: 120%;
+	letter-spacing: 1px;
+}
+
+.card__text p{
+	@include adaptiveValue("margin-bottom", 20, 10);
+}
+
+.text__bold{
+	font-weight: 700;
+}
+.card__number {
+	max-width: 45px;
+	max-height: 45px;
+	border-radius: 50%;
+	align-self: right;
+	display: block;
+  margin-left: auto;
+}
+// .card__pagging {
+// 	background-color: black;
+// }

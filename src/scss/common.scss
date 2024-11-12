@@ -8,3 +8,12 @@
 	text-align: center;
 	padding: 15px;
 }
+
+._title-2{
+	font-family: $fontFamily;
+  @include adaptiveValue("font-size", 50, 27);
+  font-weight: 600;
+  color: #000;
+  line-height: 120%;
+  // padding: 15px;
+}
